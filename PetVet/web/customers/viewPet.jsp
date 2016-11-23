@@ -31,6 +31,6 @@
     &nbsp;&nbsp;&nbsp;&nbsp;
     <a href="/mvc_cust/addNewPet">Add New Pet</a>
     &nbsp;&nbsp;&nbsp;&nbsp;
-    <a href="/mvc_cust/editPet=>">Edit Pet</a>
+    <a href="/mvc_cust/editPet">Edit Pet</a>
 </body>
 </html>

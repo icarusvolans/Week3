@@ -19,7 +19,7 @@
                 <td><c:out value="${pet.petId}" /></td>
                 <td><c:out value="${pet.name}" /></td>
                 <td><c:out value="${pet.petType}" /></td>
-                <td><c:out value="${owner.ownerId}" /></td>
+                <td><c:out value="${pet.ownerId}" /></td>
             </tr>
         </c:forEach>
     </table>
