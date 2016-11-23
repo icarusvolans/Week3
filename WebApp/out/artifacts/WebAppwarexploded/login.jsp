@@ -11,7 +11,7 @@
     <title>Login</title>
 </head>
 <body>
-<form name="loginForm" action="/mvc/userStuff">
+<form name="loginForm" action="/mvc/userInformation">
     NAME: <input type="text" name="name">
     <br>
     <input type="submit">

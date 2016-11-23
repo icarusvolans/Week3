@@ -20,11 +20,12 @@ public class ControllerServlet extends HttpServlet {
         String uri = request.getRequestURI();
         System.out.println("Requested URI: "+uri);
 
-        String jspName = uri.substring(uri.lastIndexOf('/'));
+        String jspName = uri.substring(uri.lastIndexOf('/') + 1);
         System.out.println("JSP Name: "+jspName);
-        if(jspName.equalsIgnoreCase("userStuff")) {
+        if(jspName.equalsIgnoreCase("userInformation")) {
 
             String name = request.getParameter("name");
+            System.out.println(name);
             if(name != null && !name.isEmpty() && users.containsKey(name)) {
                 User u = users.get(name);
                 request.setAttribute("name",u.getName());
@@ -44,6 +45,7 @@ public class ControllerServlet extends HttpServlet {
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws
         IOException, ServletException {
+        System.out.println("I'm in doGet");
             doPost(request, response);
 
     }

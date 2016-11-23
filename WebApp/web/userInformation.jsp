@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>User Stuff</title>
+    <title>User Information</title>
 </head>
 <body>
 Name: <%=request.getAttribute("name")%>
